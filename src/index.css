@@ -1,13 +1,112 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root{
+  padding:0px;
+  margin:0px;
+  width: 100%;
+  height: 100%;
+  background: #D9A679;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  height: 10vh;
+  width: 10vh;
+  padding: 10px 20px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #6B3E26;
+  background-image: url("https://png.pngtree.com/background/20230611/original/pngtree-many-different-kinds-of-food-are-arranged-on-a-table-picture-image_3145533.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black ;
+  border-radius: 20px;
+}
+
+
+.navitems{
+  display: flex;
+  /* padding: 10px; */
+  /* background-color: blue; */
+  /* justify-content: space-around; */
+  align-items: center;
+}
+.navitems > a{
+  margin: 10px;
+  font-size: larger;
+  text-decoration: none;
+}
+.navitems > a > button{
+  border-radius: 20px;
+  padding: 10px 20px;
+  color:  #9d603e;
+  background-color: #f8f5f2;
+}
+.navitems > a > button:hover{
+  background-color:  #f2cdb9;
+  color: #a1591a;
+}
+.cardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.card{
+  /* border: 2px  solid black; */
+  height: 450px;
+  width: 150px;
+  padding: 20px;
+  margin:5px;
+  background-color: #ebd1a2;
+  align-items: center;
+  border-radius: 20px 40px;
+}
+
+.card:hover{
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(73, 31, 9, 0.4);
+}
+
+.foodImage{
+  /* justify-content: center; */
+  
+  /* margin: 20px; */
+  height: 200px;
+  width: 100%;
+  border-radius: 20px  40px;
+
+}
+
+.content{
+  color: #6B3E26;
+  
+}
+
+.search{
+  padding: 10px;
+  margin: 5px;
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.shimmer-card{
+  /* border: 2px  solid black; */
+  height: 450px;
+  width: 150px;
+  padding: 20px;
+  margin:5px;
+  background-color: #ebd1a2;
+  border-radius: 20px 40px;
+}
+
+.shimmer-card:hover{
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(73, 31, 9, 0.4);
 }
