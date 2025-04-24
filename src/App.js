@@ -1,10 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Logo from "./components/Logo";
 import NavItems from "./components/NavItems";
 import CardContainer from "./components/CardContainer";
 import About from "./components/About";
+import Contact from "./components/Contact";
+// import { Outlet } from "react-router-dom";
+
 
 const AppLayout = () => (
   <>
@@ -31,6 +33,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
