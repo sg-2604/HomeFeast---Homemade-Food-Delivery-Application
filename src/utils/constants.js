@@ -1,3 +1,4 @@
 export const ImgUrl="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/";
 export const LogoUrl= "https://curious-macaw-231.notion.site/image/attachment%3Aa3fd362e-ad0c-4c91-9e03-7174ae4a15cd%3Aimage.png?table=block&id=1cb8f039-a3fb-800e-8b1b-f0c100ef1d79&spaceId=219858e6-44cb-4028-868b-c9d29bad2b15&width=1420&userId=&cache=v2";
-
+export const RestaurantUrl= "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.449923&lng=80.3318736&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const MenuUrl= "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=26.4606246&lng=80.3566754&restaurantId=";

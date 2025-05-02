@@ -1,22 +1,17 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Logo from "./components/Logo";
-import NavItems from "./components/NavItems";
-import CardContainer from "./components/CardContainer";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Header from "./components/Header";
+import Body from "./components/Body";
 import About from "./components/About";
 import Contact from "./components/Contact";
-// import { Outlet } from "react-router-dom";
+import Error from "./components/Error";
+import RestaurantMenu from "./components/RestrauntMenu";
 
 
 const AppLayout = () => (
   <>
-    <div className="Header">
-      <Logo />
-      <NavItems />
-    </div>
-    <div className="Body">
-      <CardContainer />
-    </div>
+    <Header />
+    <Outlet />
     {/* <div className="Footer">
         <CopyRight/>
         <Links/>
@@ -29,14 +24,26 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
+    errorElement: <Error />, // this will show on route errors
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <RestaurantMenu />,
+      },
+      // more routes here
+    ],
   },
 ]);
 
